@@ -1,0 +1,17 @@
+p {
+    color: white;
+}
+
+body {
+    background: rgb(44,157,192);
+    background: linear-gradient(90deg, rgba(44,157,192,1) 20%, rgba(5,53,98,1) 60%, rgba(42,110,255,1) 100%);
+}
+
+.bd-example-row {
+    padding-top. 25vh;
+    padding-bottom: 15rem;
+    background: rgb(44,157,192);
+    background: linear-gradient(90deg, rgba(44,157,192,1) 20%, rgba(5,53,98,1) 60%, rgba(42,110,255,1) 100%);
+    border: 1px solid black;
+    color: white;
+}
