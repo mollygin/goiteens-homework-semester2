@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/main.css">
+    <script>
+
+    </script>
+</head>
+<body>
+    <h1>{{ test_name }} {{ title }}</h1>
+     <ul>
+         {% for element in students %}
+         <li>
+            {% if element.score > 80 %}
+                "good!"
+             {% else %}
+                "bad"
+             {% endif %}
+
+             <em> {{ element.name }}: </em> {{ element.score }} / {{max_score}}
+         </li>
+         {% endfor %}
+     </ul>
+
+    <h1>{{ name }} {{ title1 }}</h1>
+     <ul>
+         {% for onefruit in fruits %}
+         <li>
+             <em>{{ onefruit.f_name }}:</em> {{ onefruit.f_count }} {{ onefruit.f_name.lower() }}s, {{onefruit.f_cost}} €
+         </li>
+         {% endfor %}
+     </ul>
+</body>
+</html>
