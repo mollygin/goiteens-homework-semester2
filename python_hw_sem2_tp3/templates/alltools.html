@@ -1,0 +1,9 @@
+{# templates/alltools.html #}
+
+<ul>
+    {% for element in ["dahlia", "valley_lily", "lily"] %}
+    <li>
+    <a href="{{ url_for(element) }}">{{ element|title }}</a>
+    </li>
+    {% endfor %}
+</ul>

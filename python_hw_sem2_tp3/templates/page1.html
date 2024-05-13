@@ -1,0 +1,24 @@
+{# templates/page1.html #}
+{% import "macros.html" as macros %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {{ title }} {% endblock title %}</title>
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+    <header>
+    {{ macros.light_dark_mode("body") }}
+    </header>
+
+    {% block content %}
+    <h1>Welcome to {{ title }}</h1>
+    {% endblock content %}
+
+    <footer>
+        {% include "alltools.html" %}
+    </footer>
+
+</body>
+</html>
