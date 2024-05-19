@@ -2,7 +2,7 @@ import sqlite3
 
 def read_sqlite_table():
     try:
-        sqlite_connection = sqlite3.connect("Database.db")
+        sqlite_connection = sqlite3.connect("./Database.db")
         cursor = sqlite_connection.cursor()
 
         sqlite_select_query = """

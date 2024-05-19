@@ -2,12 +2,12 @@ import sqlite3
 
 def create_db():
     try:
-        sqlite_connection = sqlite3.connect("Database.db")
+        sqlite_connection = sqlite3.connect("./Database.db")
         sqlite_select_query = """
             CREATE TABLE sqlitedb_developers(
                 id INTEGER PRIMARY KEY,
                 name TEXT NOT NULL,
-                group_ TEXT NOT NULL,
+                gr TEXT NOT NULL,
                 direction TEXT NOT NULL,
                 email TEXT NOT NULL,
                 joining_date datetime,
@@ -30,5 +30,3 @@ def create_db():
         if(sqlite_connection):
             sqlite_connection.close()
             print("Close DB")
-
-create_db()

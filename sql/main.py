@@ -4,6 +4,7 @@ from flask import (
     request
 )
 import sqlite3
+
 from Database import (
     create_db,
     insert_variable,
@@ -23,10 +24,13 @@ def join():
     if request.method == "POST":
         name = request.form["name"]
         email = request.form["email"]
-        joining_date = request.form["joining_date"]
+        gr = request.form["gr"]
+        direction = request.form["direction"]
+        joining_date = str(request.form["joining_date"])
+        age = int(request.form["age"])
         salary = request.form["salary"]
 
-        insert_variable(name, email, joining_date, salary)
+        insert_variable(name, email, gr, direction, joining_date, age, salary)
         return render_template("index.html")
     return render_template("join.html")
 

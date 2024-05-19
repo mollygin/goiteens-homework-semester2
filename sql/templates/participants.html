@@ -4,7 +4,39 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
 
+<body>
+    <table style="width:100%">
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Group</th>
+            <th>Direction</th>
+            <th>Date</th>
+            <th>Age</th>
+            <th>Salary</th>
+
+        </tr>
+
+    {% for element in data %}
+        <tr>
+            <th>{{element[0]}}</th>
+            <th>{{element[1]}}</th>
+            <th>{{element[2]}}</th>
+            <th>{{element[3]}}</th>
+            <th>{{element[4]}}</th>
+            <th>{{element[5]}}</th>
+            <th>{{element[6]}}</th>
+            <th>{{element[7]}}</th>
+
+        </tr>
+    {% endfor %}
+    </table>
 </body>
 </html>
