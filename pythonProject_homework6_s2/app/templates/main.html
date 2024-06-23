@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jokes</title>
+</head>
+<body>
+    {% for i in info %}
+        <p>{{ i["setup"] }}</p>
+        <p>{{ i["punchline"] }}</p>
+        <br>
+    {% endfor %}
+</body>
+</html>
